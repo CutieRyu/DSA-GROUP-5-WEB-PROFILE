@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Algorithms Comparison</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+            <a href="{{url_for('show_index')}}">Home</a>
+            <a href="{{url_for('allen_profile')}}">About Allen </a>
+            <a href="{{url_for('simple_profile')}}">About Christian</a>
+            <a href="{{url_for('denie_profile')}}">About Denie</a>
+            <a href="{{url_for('kaye_profile')}}">About Jean</a>
+            <a href="{{url_for('paige_profile')}}">About Jasmine</a>
+            <a href="{{url_for('ballena_profile')}}">About Gerome</a>
+            </li>
+        </ul>
+    </nav>
+    <h1>Search Algorithms</h1>
+    <form action="/search" method="post">
+        <label for="element">Enter a number you want to find:</label>
+        <input type="number" name="element" required>
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html

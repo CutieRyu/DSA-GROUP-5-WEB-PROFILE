@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+            <a href="{{url_for('show_index')}}">Home</a>
+            <a href="{{url_for('allen_profile')}}">About Allen </a>
+            <a href="{{url_for('simple_profile')}}">About Christian</a>
+            <a href="{{url_for('denie_profile')}}">About Denie</a>
+            <a href="{{url_for('kaye_profile')}}">About Jean</a>
+            <a href="{{url_for('paige_profile')}}">About Jasmine</a>
+            <a href="{{url_for('ballena_profile')}}">About Gerome</a>
+            </li>
+        </ul>
+    </nav>
+    <h1>Search Results</h1>
+    <p>Linear Search Result: {{ linearsearch_result }}, Time Measured: {{ linearsearch_time }}</p>
+    <p>Binary Search Result: {{ binarysearch_result }}, Time Measured: {{ binarysearch_time }}</p>
+    <p>Jump Search Result: {{ jumpsearch_result }}, Time Measured: {{ jumpsearch_time }}</p>
+    <p>Exponential Search Result: {{ exponentialsearch_result }}, Time Measured: {{ exponentialsearch_time }}</p>
+    <p>Interpolation Search Result: {{ interpolationsearch_result }}, Time Measured: {{ interpolationsearch_time }}</p>
+    <p>Ternary Search Result: {{ ternarysearch_result }}, Time Measured: {{ ternarysearch_time }}</p>
+</body>
+</html>
